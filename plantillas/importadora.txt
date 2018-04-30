@@ -1,0 +1,2 @@
+{% from "sumadora.txt" import suma %}
+{{ suma(3, 4) }}

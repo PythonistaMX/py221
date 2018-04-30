@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {% block head %}
+    <link rel="stylesheet" href="style.css" />
+    <title>Bienvenidos a {% block title%}Pythonista{% endblock %}</title>
+    {% endblock %}
+</head>
+<body>
+    <div id="content">{% block content %}Hola, Bienvenidos.{% endblock %}</div>
+    <div id="footer">
+        {% block footer %}
+        &copy; Copyright 2017 <a href="https://pythonista.mx/">Pythonista®.</a>.
+        {% endblock %}
+    </div>
+</body>

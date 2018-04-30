@@ -1,0 +1,3 @@
+{% macro suma (a, b=2) %}
+La suma es {{a + b}}.
+{% endmacro %}

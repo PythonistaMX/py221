@@ -1,0 +1,9 @@
+<h1> Alumnos Encontrados</h1>
+<ul>
+{%for alumno in alumnos %}
+<li> <a href={{ url_for('despliega', cuenta=alumno['Cuenta']) }}> {{ alumno['Cuenta']}}</a>: 
+{%for campo in ['Nombre', 'Primer Apellido', 'Segundo Apellido'] %}
+{{alumno[campo]}}
+{% endfor %} </li> 
+{% endfor %}
+</ul>

@@ -1,0 +1,9 @@
+<h1> Datos personales del alumno </h1>
+{% from "_formhelpers.html" import render_field %}
+<form method="POST">
+    {{ form.hidden_tag() }}
+    {{ render_field(form.nombre) }}
+    {{ render_field(form.primer_apellido) }}
+    {{ render_field(form.segundo_apellido) }}
+    {{ form.enviar }}
+</form>

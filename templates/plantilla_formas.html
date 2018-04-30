@@ -1,0 +1,8 @@
+<h1> Datos personales del alumno </h1>
+<form method="POST">
+    {{ form.hidden_tag() }}
+    {{ form.nombre.label }} {{form.nombre(id='nombre')}}
+    {{ form.primer_apellido.label }} {{form.primer_apellido(id='primer apellido')}}
+    {{ form.segundo_apellido.label }} {{form.segundo_apellido(id='segundo apellido')}}
+    {{ form.enviar }}
+</form>

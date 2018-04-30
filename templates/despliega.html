@@ -1,0 +1,9 @@
+<h1> Alumno {{ alumno['Cuenta'] }} </h1>
+<ul>
+<li>Nombre: {%for campo in ['Nombre', 'Primer Apellido', 'Segundo Apellido'] %}
+{{alumno[campo]}}{% endfor %}</li>
+<li>Carrera: {{ alumno['Carrera'] }} </li>
+<li>Semestre: {{ alumno['Semestre'] }} </li>
+<li>Promedio: {{ alumno['Promedio'] }} </li>
+{% if alumno["Al Corriente"] %} <li>El alumno está al corriente de pagos.</li> {% endif %}
+</ul>

@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bienvenidos </title>
+</head>
+<body>
+   <h1>Listado de referencias</h1>
+   <ul>
+   {% for nombre, liga in lista %}
+   <li><a href='{{ liga }}'> {{ nombre.capitalize() }}</a></li>
+   {% endfor %}
+   <ul>
+</body>
