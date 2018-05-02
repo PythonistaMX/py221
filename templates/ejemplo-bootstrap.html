@@ -1,0 +1,30 @@
+{% extends "bootstrap/base.html" %}
+{% block title %}Página de prueba{% endblock %}
+
+
+{% block content %}
+<div class="jumbotron">
+  <h1>Hola. Esta es la página de {{ mensaje }}.</h1>
+      <p> ¡Bienvenido!</p>
+</div>
+<p> Esta es una prueba simple del uso de Flask-Boostrap.</p>
+{% endblock %}
+
+
+{% block navbar %}
+<div id="navbar">
+ <ul>
+     <li><a href= {{url_for('index')}}>Inicio</a> </li>
+     <li><a href= {{url_for('apartado', nombre='Acerca de nosotros')}}>Acerca de nosotros</a> </li>
+     <li><a href= {{url_for('apartado', nombre='Contacto')}}>Contacto</a> </li>
+  </ul>
+  <!-- ... -->
+</div>
+{% endblock %}
+
+
+{% block styles %}
+{{super()}}
+<link rel="stylesheet"
+      href="{{url_for('.static', filename='estilo.css')}}">
+{% endblock %}

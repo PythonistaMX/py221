@@ -1,0 +1,17 @@
+#navbar li {
+display:inline;
+padding-left: 2em;
+list-style-type: none;
+}
+#navbar a:link, #navbar a:visited {
+font-size: 110%;
+line-height: 1em;
+font-weight: normal;
+text-decoration: none;
+color: #CB5C14;
+background: no-repeat top center;
+}
+#navbar #navbar, #navbar a:hover {
+color: #000;
+background: transparent url(pyramid.gif) no-repeat top center;
+}
