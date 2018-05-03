@@ -1,5 +1,9 @@
 {% extends "plantilla_base.html" %}
-{% block title %} Cloudevel {%endblock %}
+{% block title %} 
+Cloudevel, empresa hermana de 
+{{ super() }}
+{%endblock %}
 {% block footer %}
     &copy; Copyright 2018 <a href="https://cloudevel.com/">Cloudevel.</a>.
+{{ super() }}
 {% endblock %}
