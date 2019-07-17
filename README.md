@@ -1,6 +1,6 @@
 [![imagenes](imagenes/pythonista.png)](https://pythonista.mx)
 
-# py201 Introducción a desarrollo web con Flask
+# py221 Introducción a desarrollo web con Flask
 
 ## Temario:
 
@@ -26,7 +26,7 @@
 
 Para descargar los apuntes ejecute el siguiente comando:
 ```
-git clone https://github.com/PythonistaMX/py201.git
+git clone https://github.com/PythonistaMX/py221.git
 ```
 
 ## La máquina virtual de Pythonista<sup>®</sup>
