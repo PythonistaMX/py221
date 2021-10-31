@@ -13,4 +13,4 @@ def inicio():
 def ruta_dinamica(usuario):
     return('<p>Hola, {}.</p>'.format(usuario))
 
-app.run(host="0.0.0.0")
+app.run(host="0.0.0.0", port=8080, debug=True)
