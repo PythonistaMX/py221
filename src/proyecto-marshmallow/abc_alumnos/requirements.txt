@@ -1,0 +1,7 @@
+Flask >= 2.0.2
+Flask-Bootstrap >= 3.3.7.1
+Flask-RESTful >= 0.3.9
+Flask-WTF >= 0.15.1
+jsonschema >= 4.1.0
+Flask-SQLAlchemy >= 2.5.1
+Flask-Security >= 3.0.0
