@@ -12,13 +12,6 @@ campos ={'Cuenta': (int, True), 'Nombre': (str, True), 'Primer Apellido': (str, 
 # Listado de las cadenas de caracteres que deben aceptarse en el campo "Carreras". 
 carreras = ("Sistemas", "Derecho", "Actuaría", "Arquitectura", "Administración")
 
-# JSONSchema de Alumnos.
-
-#! /usr/bin/python3
-
-# La ruta en la que se encuentra la base de datos.
-ruta = 'data/alumnos.txt'
-
 # JSONSchema para alumnos.
 esquema_alumno = {
     "$schema": "http://json-schema.org/draft-07/schema#",

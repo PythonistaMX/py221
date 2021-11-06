@@ -1,8 +1,8 @@
-<h1> Alumnos Encontrados</h1>
+<h1> Alumnos Encontrados:</h1>
 <ul>
-{%for alumno in alumnos %}
-<li>{% for campo in ['Nombre', 'Primer Apellido', 'Segundo Apellido'] %}
+    {% for alumno in alumnos %}
+    <li>{% for campo in ['nombre', 'primer_apellido', 'segundo_apellido'] %}
 {{alumno[campo]}}
-{% endfor %}</li> 
-{% endfor %}
+        {% endfor %}</li> 
+    {% endfor %}
 </ul>
