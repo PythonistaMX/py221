@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>Datos del alumno</title>
+  </head>
+  <body>
+    <h1>Datos personales del alumno.</h1>
+    <form method="POST">
+      {{ form.hidden_tag() }}
+      <p>{{ form.nombre.label }}</p>
+      {{ form.nombre }}
+      <p>{{ form.primer_apellido.label }}</p>
+      {{ form.primer_apellido }}
+      <p>{{ form.segundo_apellido.label }}</p>
+      {{ form.segundo_apellido }}
+      <p>{{ form.carrera.label }}</p>
+      {{ form.carrera }}
+      <p>{{ form.semestre.label }}</p>
+      {{ form.semestre }}
+      <p>{{ form.promedio.label }}</p>
+      {{ form.promedio }}
+      <p>{{ form.al_corriente.label }}</p>
+      {{ form.al_corriente }}
+      <p>
+      {{ form.enviar }}
+    </form>
+  </body>
+</html>

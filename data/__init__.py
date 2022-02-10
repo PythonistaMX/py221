@@ -1,7 +1,7 @@
 #! /usr/bin/python3
 
 # La ruta en la que se encuentra la base de datos.
-ruta = 'data/alumnos.txt'
+ruta = 'data/alumnos.py'
 
 # Define los campos que conforman la estructura de un mensaje completo. 
 orden = ('Nombre', 'Primer Apellido', 'Segundo Apellido', 'Carrera','Semestre', 'Promedio', 'Al Corriente')
