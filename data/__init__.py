@@ -4,10 +4,10 @@
 ruta = 'data/alumnos.py'
 
 # Define los campos que conforman la estructura de un mensaje completo. 
-orden = ('Nombre', 'Primer Apellido', 'Segundo Apellido', 'Carrera','Semestre', 'Promedio', 'Al Corriente')
+orden = ('nombre', 'primer_apellido', 'segundo_apellido', 'carrera','semestre', 'promedio', 'al_corriente')
 
 # Indica el tipo de dato de cada campo en un registro de la base de datos, y si este es obligatorio (True).
-campos ={'Cuenta': (int, True), 'Nombre': (str, True), 'Primer Apellido': (str, True), 'Segundo Apellido': (str, False), 'Carrera': (str, True), 'Semestre': (int, True), 'Promedio': (float, True), 'Al Corriente': (bool, True)}
+campos ={'cuenta': (int, True), 'nombre': (str, True), 'primer_apellido': (str, True), 'segundo_apellido': (str, False), 'carrera': (str, True), 'semestre': (int, True), 'promedio': (float, True), 'al_corriente': (bool, True)}
 
 # Listado de las cadenas de caracteres que deben aceptarse en el campo "Carreras". 
 carreras = ("Sistemas", "Derecho", "Actuaría", "Arquitectura", "Administración")
