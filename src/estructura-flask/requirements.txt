@@ -1,0 +1,8 @@
+apiflask
+flask-SQLAlchemy
+flask-user
+email-validator
+bcrypt
+pytest
+tox
+coverage

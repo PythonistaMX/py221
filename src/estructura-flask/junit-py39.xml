@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="1" failures="0" skipped="0" tests="1" time="0.736" timestamp="2022-02-05T17:52:08.809002" hostname="15ARH05"><testcase classname="" name="tests.test_01endpoints" time="0.000"><error message="collection failure">ImportError while importing test module '/home/josech/Dropbox/Codigo/Pythonista/Cursos/api-testing-demo/tests/test_01endpoints.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.9/importlib/__init__.py:127: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+tests/test_01endpoints.py:2: in &lt;module&gt;
+    from apiflaskdemo.project import create_app
+E   ImportError: cannot import name 'create_app' from 'apiflaskdemo.project' (/home/josech/Dropbox/Codigo/Pythonista/Cursos/api-testing-demo/apiflaskdemo/project/__init__.py)</error></testcase></testsuite></testsuites>

@@ -1,0 +1,1 @@
+carreras = ("Sistemas", "Derecho", "Actuaría", "Arquitectura", "Administración")

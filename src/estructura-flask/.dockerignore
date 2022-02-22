@@ -1,0 +1,7 @@
+**/__pycache__
+**/.coverage
+**/*.pyc
+.dockerignore
+.pytest_cache
+.tox
+*.egg-info
