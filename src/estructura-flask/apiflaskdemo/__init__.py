@@ -26,7 +26,7 @@ def create_app():
         if not inspector.has_table('alumno'):
             # Crea y llena la base de alumno.
             db.create_all()
-            with open(app.config['PATH'] + "/../data/alumnos.txt", "rt") as f:
+            with open(app.config['PATH'] + "/../data/alumnos.py", "rt") as f:
                 alumnos = eval(f.read())
                 for alumno in alumnos:
                     if Alumno.query.filter_by(cuenta=alumno["cuenta"]).first():
@@ -35,14 +35,14 @@ def create_app():
                         db.session.add(Alumno(**alumno))
                 db.session.commit()
                 
-            # Verifica que exista el usuario admin y lo crea si no es así 
-            if not User.query.filter_by(username="admin"):
-                user = User(username='admin',
-                           email='example@example.com',
-                           password='admin', 
-                           active=True)
-                db.session.add(user)
-                db.session.commit()
+        # Verifica que exista el usuario admin y lo crea si no es así 
+        if not User.query.filter_by(username="admin").first():
+            user = User(username='admin',
+                       email='example@example.com',
+                       password='admin', 
+                       active=True)
+            db.session.add(user)
+            db.session.commit()
                 
     # Registra los blueprints con los endpoints
     app.register_blueprint(abc_alumnos, url_prefix='/api')
