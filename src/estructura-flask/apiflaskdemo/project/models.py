@@ -1,5 +1,5 @@
 from flask_sqlalchemy import SQLAlchemy
-from flask_user import UserMixin
+from flask_login.mixins import UserMixin
 
 db = SQLAlchemy()
 

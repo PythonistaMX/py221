@@ -1,8 +1,8 @@
 apiflask
-flask-SQLAlchemy
-flask-user
+Flask-Login
 email-validator
 bcrypt
 pytest
 tox
 coverage
+Flask-SQLAlchemy
